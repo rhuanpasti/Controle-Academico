@@ -8,6 +8,12 @@ const routes: Routes = [
         redirectTo: '/dashboard',
     },
     {
+        path: 'academico',
+        loadChildren: () =>
+            import('modules/academico/academico-routing.module').then(m => m.AcademicoRoutingModule),
+    },
+
+    {
         path: 'charts',
         loadChildren: () =>
             import('modules/charts/charts-routing.module').then(m => m.ChartsRoutingModule),

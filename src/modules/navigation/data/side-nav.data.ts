@@ -13,6 +13,11 @@ export const sideNavSections: SideNavSection[] = [
         text: 'ADDONS',
         items: ['charts', 'tables'],
     },
+    {
+        text: 'Academicos',
+        items: ['turmas'],
+    },
+
 ];
 
 export const sideNavItems: SideNavItems = {
@@ -85,4 +90,9 @@ export const sideNavItems: SideNavItems = {
         text: 'Tables',
         link: '/tables',
     },
+    turmas:{
+        icon:'table',
+        text: 'Turmas',
+        link: '/academico',
+    }
 };
